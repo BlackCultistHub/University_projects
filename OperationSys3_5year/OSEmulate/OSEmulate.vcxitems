@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{f7e14082-f527-4e48-ab6e-3a66e70ef1c6}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CPU.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OSEmulate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)OSEmulate_stdafx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TaskPool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Task.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)TaskPoolSave.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Thread.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CPU.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TaskPool.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Task.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)TaskPoolSave.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Thread.cpp" />
+  </ItemGroup>
+</Project>
